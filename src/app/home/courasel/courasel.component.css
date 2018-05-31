@@ -1,0 +1,12 @@
+#container{
+    width:100%;
+    padding :0;
+    background: #FFF;
+    padding-bottom: 5px;
+}
+.items{
+    max-width: 300px;
+    height: 450px;
+    background: #ECECEC;
+}
+

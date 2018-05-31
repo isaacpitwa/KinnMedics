@@ -1,0 +1,34 @@
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <div class="navbar-brand">Kinn Medics</div>           
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavBar"><span class="navbar-toggler-icon"></span></button>
+          <ul class="nav navbar-nav">
+            <li class="active nav-item" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">
+              <a routerLink="/" class="nav-link">Home</a></li>
+            <li class="nav-item " id="Appoint" routerLinkActive="active"><a routerLink="/appointment"class="nav-link">Appointment</a>
+            
+            </li>
+            <li  class="nav-item" routerLinkActive="active"><a routerLink="/phamarcy" class="nav-link">Phamarcy</a></li>
+            <li class="nav-item"routerLinkActive="active"><a routerLink="/invoice" class="nav-link">Invoice</a></li>
+            <li class="nav-item"routerLinkActive="active"><a routerLink="/contactUs"  class="nav-link">Contact Us</a></li>
+                     </ul>
+          <ul class="nav navbar-nav navbar-right"*ngFor="let status of statusz">
+            <li><a href="#"class="nav-link"><span class="fa fa-user"></span> Sign Up</a></li>
+            <li><a  routerLink="/login" class="nav-link"><span class="fa fa-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+        
+      </nav> 
+      <!-- 
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="#">link1</a>
+            <a href="#">link1</a>
+          </div>
+        </div>
+      --> 
+      

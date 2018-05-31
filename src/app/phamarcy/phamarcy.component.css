@@ -1,0 +1,20 @@
+.search{
+    padding: 8px 15px;
+    background: rgba(50, 50, 50, 0.2);
+    border: 0px solid #dbdbdb;
+    }
+    .button{
+        position: relative;
+        padding: 16px 15px;
+        left:-8px;
+        border: 2px solid #207cca;
+        background: #207cca;
+        color: #fafafa;
+    }
+    form{
+        float: none;
+        margin: 0 auto;
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+    

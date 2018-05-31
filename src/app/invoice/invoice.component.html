@@ -1,0 +1,59 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <p>Hold the Heading of the Invoice</p>
+  </div>
+  <div class="row">
+     <div class="col-sm-4">
+       <h4>Drug & Medication</h4><hr> 
+      <ul class="list-unstyled ">
+        <li class=""><a href="" >find a Drug</a></li><hr size="10">
+        <li><a href="">My medicine</a></li><hr>
+        <li><a href="">pill Identifier</a></li><hr>
+        <li><a href="">find a vitamin</a></li><hr>
+        <li><a href="">find a phamarcy</a></li><hr>
+      </ul> 
+      <h5>Vitamines & Supplements</h5><hr>
+      <ul class="list-unstyled ">
+        <li class=""><a href="" >find a vitamine or Supplement</a></li><hr>
+        <li><a href="">Vitamin lifestyle Guide</a></li><hr>
+        
+      </ul> 
+      <h4>First Aid Resourses</h4><hr>
+      <ul class="list-unstyled ">
+        <li class=""><a href="" >first aid hones</a></li><hr>
+        <li><a href="">first aidkit & wound Care</a></li><hr>
+         </ul> 
+         </div>
+         <div class="col-sm-8" >
+            <table id="customers">
+              <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Units</th>
+                <th>Amount</th>
+               
+              </tr>
+              <tr *ngFor="let item of bought">
+               <td>1.</td>
+                <td>{{item.name}}</td>
+                <td>{{item.units}}ML</td>
+                <td>{{item.amount}}.00</td>
+                
+              </tr>
+             
+       
+            
+             
+            </table>
+            <p class="float-left" id="total" >Total.............UGX {{this.total}}1000.00</p>
+            <div class="float right">
+                <button class="btn btn-outline-primary float-right btn-space" >Approve</button>
+                <button class="btn btn-outline-success float-right btn-space" >Cancel</button>
+            </div>
+           
+         </div>
+  </div>
+</div>
+<app-footer></app-footer>
+
